@@ -1,0 +1,64 @@
+@RefitDemo.Api_HostAddress = http://localhost:5007
+
+GET {{RefitDemo.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{RefitDemo.Api_HostAddress}}/product
+Accept: application/json
+
+###
+
+POST {{RefitDemo.Api_HostAddress}}/product
+Content-Type: application/json
+
+{
+  "name": "Tablet",
+  "price": 299.99
+}
+
+###
+
+GET {{RefitDemo.Api_HostAddress}}/order
+Accept: application/json
+
+###
+
+POST {{RefitDemo.Api_HostAddress}}/order
+Content-Type: application/json
+
+{
+  "productName": "Laptop",
+  "quantity": 2
+}
+
+###
+
+GET {{RefitDemo.Api_HostAddress}}/user
+Accept: application/json
+
+###
+
+POST {{RefitDemo.Api_HostAddress}}/user
+Content-Type: application/json
+
+{
+  "username": "charlie"
+}
+
+###
+
+GET {{RefitDemo.Api_HostAddress}}/message
+Accept: application/json
+
+###
+
+POST {{RefitDemo.Api_HostAddress}}/message
+Content-Type: application/json
+
+{
+  "content": "Hello, world!"
+}
+
+###
